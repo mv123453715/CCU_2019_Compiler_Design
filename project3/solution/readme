@@ -1,0 +1,63 @@
+0.題目：CD Project3 Static Type Checker
+1.學號:406410114
+2.姓名:郭晏誠
+3.環境(哪一台工作站): mcore8.cs.edu.tw
+4.E-mail:mv123453715@gmail.com
+
+5.操作
+  (1)make產生執行檔案
+  (2)java -cp ./antlr-3.5.2-complete.jar:. myChecker_test "FILENAME"
+  (3)make clean清除執行檔與中間檔
+
+6.type_checking_rule基本要求 (詳情請見type_checking_rule.docx)
+  (1)Each variable must be declared before it is used.
+  (2)Each identifier can be only declared once.
+  (3)The types of the operands of an operator must be the same.(+,-,*,/)
+  (4)The types of the two sides of an assignment must be the same.
+  (5)==、!=、>=、>、<=、<等運算的結果，其type為boolean.
+  例如: expression 2>3 的type為boolean.
+  (6)if-else、for-loop、while-loop constructs的condition部分，其type 必須是boolean，否則為type error.
+
+  
+7.type_checking_rule額外功能 (詳情請見type_checking_rule.docx)
+  (1)The types of the operands of an operator must be the same.(*=,/=,%=,+=,-=)
+  (2)else if的condition部分，其type 必須是boolean
+
+8.測試資料
+  (1)基本功能測試
+    V(a)test1.c：測試每個變數使用前一定要被宣告
+    V(b)test2.c：相同變數名稱只能被宣告一次
+    V(c)test3.c:運算的兩邊的type必須相同(+,-,*,/)
+    V(d)test4.c:assignment 兩邊必須相同type
+    V(e)test5.c:測試比較算子為boolean
+    V(f)test6.c:測試if的condition部分，其type 必須是boolean
+    V(g)test7.c:測試while-loop的condition部分，其type 必須是boolean constructs
+    V(h)test8.c:測試for-loop的condition部分，其type 必須是boolean constructs
+     
+  (2)額外功能測試
+    V(a)test9.c:運算的兩邊的type必須相同(*=,/=,%=,+=,-=)
+    V(b)test10.c:測試else if的condition部分，其type 必須是boolean
+  
+9.8.subset_of_C (詳情請見subset_of_C.doc)
+  (1)支援基本的算術運算的statement：+,-,*,/,(,)
+  (2)支援下列的program construct(單層)
+    (a)if-then 
+    (b)if-then-else 
+    (c)for-loop 
+    (d)while-loop 
+  (3)支援printf function.
+  (4)可支援比較算子：==,!=,>=,<=,>,<
+  (5)支援scanf function.
+  (6)支援巢狀if then else 
+  (7)支援巢狀for 
+  (8)支援巢狀while 
+  (9)支援#include
+  (10)支援return 
+  (11)支援switch, case, default 
+  (12)支援break, continue
+  (13)支援if ,else if ,else
+  (14)支援%
+  (15)支援++,--
+  (16)支援* , &(指標)
+  (17)支援*=,/=,%=,+=,-=
+  (18)支援多個副函式

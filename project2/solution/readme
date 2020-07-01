@@ -1,0 +1,67 @@
+0.題目：CD Project2 syntax analyzer
+1.學號:406410114
+2.姓名:郭晏誠
+3.環境(哪一台工作站): mcore8.cs.edu.tw
+4.E-mail:mv123453715@gmail.com
+
+5.操作
+  (1)make產生執行檔案
+  (2)java -cp ./antlr-3.5.2-complete.jar:. myC_new_test "FILENAME"
+  (3)make clean清除執行檔與中間檔
+
+6.subset_of_C基本要求 (詳情請見subset_of_C.doc)
+  (1)支援基本的算術運算的statement：+,-,*,/,(,)
+  (2)支援下列的program construct(單層)
+    (a)if-then 
+    (b)if-then-else 
+    (c)for-loop 
+    (d)while-loop 
+  (3)支援printf function.
+  
+7.subset_of_C額外功能 (詳情請見subset_of_C.doc)
+  (1)可支援比較算子：==,!=,>=,<=,>,<
+  (2)支援scanf function.
+  (3)支援巢狀if then else 
+  (4)支援巢狀for 
+  (5)支援巢狀while 
+  (6)支援#include
+  (7)支援return 
+  (8)支援switch, case, default 
+  (9)支援break, continue
+  (10)支援if ,else if ,else
+  (11)支援%
+  (12)支援++,--
+  (13)支援* , &(指標)
+  (14)支援*=,/=,%=,+=,-=
+  (15)支援多個副函式
+  
+  
+8.測試資料
+  (1)基本功能測試
+    V(a)test1.c：測試基本的算術運算的statement：+,-,*,/,(,) 
+    V(b)test2.c：測試program construct(單層) if 
+    V(c)test3.c：測試program construct(單層) if-then-else 
+    V(d)test4.c：測試program construct(單層) for-loop 
+    V(e)test5.c：測試program construct(單層) while-loop 
+    V(f)test6.c：測試printf function.
+     
+    
+  (2)額外功能測試
+    V(a)test7.c ：測試比較算子==,!=,>=,<=,>,<
+    V(b)test8.c ：測試scanf function
+    V(c)test9.c ：測試巢狀if then else 
+    V(d)test10.c：測試巢狀for 
+    V(e)test11.c：測試巢狀while 
+    V(f)test12.c：測試#include
+    V(g)test13.c：測試return 0
+    V(h)test14.c：測試switch, case, default(有問題)  
+    V(i)test15.c：測試break, continue
+    V(j)test16.c：測試if ,else if ,else
+    V(k)test17.c：測試%
+    V(l)test18.c：測試++,--
+    V(m)test19.c：測試* , &(指標)
+    V(n)test20.c：測試*=,/=,%=,+=,-=
+    V(o)test21.c：測試一個副函式
+    V(p)test22.c：測試多個副函式
+  
+    

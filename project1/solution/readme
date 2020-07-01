@@ -1,0 +1,72 @@
+0.題目：CD Project1 Lexical Analyzer
+1.學號:406410114
+2.姓名:郭晏誠
+3.環境(哪一台工作站): mcore8.cs.edu.tw
+4.E-mail:mv123453715@gmail.com
+5.subset_of_C簡介 (詳情請見subset_of_C.doc)
+  (1)keyword (關鍵字)
+    (a)int
+    (b)char
+    (c)void
+    (d)float
+    (e)#include <'(LETTER)*'.h>
+    (f)printf
+    (g)scanf
+    (h)mian
+    (i)return
+  (2)data type
+    (a)float
+    (b)string“ ”
+    (c)任意數字
+  (3)註解方式
+    (a)//
+    (b)/* */
+  (4)program execution
+    (a)程式可包含多個函式
+  (5)program control flow
+    (a)while
+    (b)if
+    (c)else
+    (d)for
+    (e)break
+    (f)continue
+    (g)switch
+    (h)case
+    (i)default
+  (6)program statement
+    (a)==
+    (b)<=
+    (c)>=
+    (d)<
+    (e)>
+    (f)!=
+    (g)++
+    (h)-- 
+    (i)<<
+    (j)>>
+    (k)=
+    (l)(
+    (m))
+    (n){
+    (o)}
+    (p),
+    (q);
+    (r)(' '|'\r'|'\t'|'\n'|'\r\n')
+    (s)&
+    (t)*
+    
+6.測試資料
+  (a)input1.c：測試keyword 
+  (b)input2.c：測試data type
+  (c)input3.c：測試註解方式
+  (d)input4.c：測試program execution
+  (e)input5.c：測試program control flow
+  (f)input6.c：測試program statement
+
+7.操作
+  (1)make產生執行檔案
+  (2)java -cp ./antlr-3.5.2-complete.jar:. testLexer input1.c
+  (3)make clean清除執行檔與中間檔
+  
+  
+    
