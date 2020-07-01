@@ -1,0 +1,59 @@
+0.ÃD¥Ø¡GSmall C compiler for Java assembly code (Jasmin)
+1.¾Ç¸¹:406410114
+2.©m¦W:³¢®Ë¸Û
+3.Àô¹Ò(­þ¤@¥x¤u§@¯¸):csie2
+4.E-mail:mv123453715@gmail.com
+
+5.¾Þ§@
+  (1)linux¿é¤Jmake
+  (2)./run.sh "C_INPUTFILE" "J_OUTPUTFILE" §Y¥i°õ¦æµ²ªG©Î¬O¨Ï¥Î(3)~(5)«ü¥O
+  ex¡G./run.sh test1.c test1.j
+  (3)java -cp ./antlr-3.5.2-complete.jar:. myCompiler_test "INPUTFILE" > "OUTPUTFILE"
+  (4)java -jar jasmin.jar "OUTPUTFILE"
+  (5)java myResult
+
+6.°òÂ¦¥\¯à
+  (1)Integer and floating-point data types: int, float.
+ƒÜ(2)Statements for arithmetic computation. (ex: a=b+2*(100-1);)
+ƒÜ(3)Comparison expression. (ex: a > b)
+ƒÜ(4)if-then / if-then-else program constructs.
+ƒÜ(5)printf() function with one/two parameters. (support types: %d, %f)
+
+  
+7.ÃB¥~¥\¯à 
+  (1)
+  
+8.´ú¸Õ¸ê®Æ
+  (1)°ò¥»¥\¯à´ú¸Õ
+    V(a)test1.c¡GInteger and floating-point data types: int, float.
+    V(b)test2.c¡GStatements for arithmetic computation. (ex: a=b+2*(100-1);)
+    V(c)test3.c¡Gif-then-else ¤¤¥Îfloat Comparison expression. ( >,<,>=,<=,==,!= )§PÂ_
+    V(d)test4.c¡Gif-then-else ¤¤¥Îint Comparison expression. ( >,<,>=,<=,==,!= )§PÂ_
+     (e)test5.c¡Gprintf() function with one/two parameters. (support types: %d, %f)
+     
+  (2)ÃB¥~¥\¯à´ú¸Õ
+    (a)test9.c:
+  
+9.subset_of_C (¸Ô±¡½Ð¨£subset_of_C.doc)
+  (1)¤ä´©°ò¥»ªººâ³N¹Bºâªºstatement¡G+,-,*,/,(,)
+  (2)¤ä´©¤U¦Cªºprogram construct(³æ¼h)
+    (a)if-then 
+    (b)if-then-else 
+    (c)for-loop 
+    (d)while-loop 
+  (3)¤ä´©printf function.
+  (4)¥i¤ä´©¤ñ¸ûºâ¤l¡G==,!=,>=,<=,>,<
+  (5)¤ä´©scanf function.
+  (6)¤ä´©±_ª¬if then else 
+  (7)¤ä´©±_ª¬for 
+  (8)¤ä´©±_ª¬while 
+  (9)¤ä´©#include
+  (10)¤ä´©return 
+  (11)¤ä´©switch, case, default 
+  (12)¤ä´©break, continue
+  (13)¤ä´©if ,else if ,else
+  (14)¤ä´©%
+  (15)¤ä´©++,--
+  (16)¤ä´©* , &(«ü¼Ð)
+  (17)¤ä´©*=,/=,%=,+=,-=
+  (18)¤ä´©¦h­Ó°Æ¨ç¦¡
